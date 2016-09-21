@@ -2,6 +2,7 @@ language: node_js
 node_js:
 - '6'
 install:
+- npm install jsdoc -g
 - npm install
 script:
 - ./ci/build.js
