@@ -1,0 +1,55 @@
+{
+  "name": "clay-driver-memory",
+  "version": "1.0.0",
+  "description": "Clay driver to store data on memory.",
+  "main": "lib",
+  "browser": "ci/browser",
+  "scripts": {
+    "test": "node ./ci/test.js",
+    "prepublish": "node ./ci/build.js && node ./ci/shim.js && node ./ci/doc.js"
+  },
+  "repository": "realglobe-Inc/clay-driver-memory",
+  "keywords": [
+    "claydb"
+  ],
+  "author": {
+    "name": "Taka Okunishi",
+    "email": "okunishinishi@gmail.com",
+    "url": "http://okunishitaka.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/realglobe-Inc/clay-driver-memory/issues"
+  },
+  "homepage": "https://github.com/realglobe-Inc/clay-driver-memory#readme",
+  "dependencies": {
+    "abind": "^1.0.0",
+    "clay-constants": "^0.2.0",
+    "clay-driver-base": "0.0.3",
+    "co": "^4.6.0",
+    "json-pointer": "^0.5.0"
+  },
+  "devDependencies": {
+    "ababel": "^1.1.10",
+    "ababel-es2015": "^1.0.8",
+    "amocha": "^1.0.15",
+    "ape-formatting": "^1.0.2",
+    "ape-releasing": "^4.0.4",
+    "ape-reporting": "^3.0.2",
+    "ape-tasking": "^4.0.9",
+    "ape-tmpl": "^5.0.19",
+    "ape-updating": "^4.0.5",
+    "coz": "^6.0.20",
+    "injectmock": "^2.0.0",
+    "sg-templates": "^1.2.2",
+    "sg-travis": "^1.1.33",
+    "stringcase": "^3.1.1"
+  },
+  "engines": {
+    "node": ">=6",
+    "npm": ">=3"
+  },
+  "publishConfig": {
+    "registry": "https://realglobe.artifactoryonline.com/realglobe/api/npm/npm-local"
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "functions": [
+    {
+      "name": "create",
+      "access": "",
+      "virtual": false,
+      "description": "Create driver instance",
+      "parameters": [],
+      "examples": [],
+      "returns": {
+        "type": "MemoryDriver",
+        "description": ""
+      }
+    }
+  ],
+  "classes": [
+    {
+      "name": "MemoryDriver",
+      "description": "",
+      "extends": [
+        "Driver"
+      ],
+      "access": "",
+      "virtual": false,
+      "fires": "",
+      "constructor": {
+        "name": "MemoryDriver",
+        "description": "Abstract driver",
+        "parameters": [],
+        "examples": []
+      },
+      "functions": [
+        {
+          "name": "open",
+          "access": "",
+          "virtual": false,
+          "description": "",
+          "parameters": [],
+          "examples": []
+        },
+        {
+          "name": "close",
+          "access": "",
+          "virtual": false,
+          "description": "",
+          "parameters": [],
+          "examples": []
+        },
+        {
+          "name": "create",
+          "access": "",
+          "virtual": false,
+          "description": "",
+          "parameters": [],
+          "examples": []
+        },
+        {
+          "name": "read",
+          "access": "",
+          "virtual": false,
+          "description": "",
+          "parameters": [],
+          "examples": []
+        },
+        {
+          "name": "update",
+          "access": "",
+          "virtual": false,
+          "description": "",
+          "parameters": [],
+          "examples": []
+        },
+        {
+          "name": "delete",
+          "access": "",
+          "virtual": false,
+          "description": "",
+          "parameters": [],
+          "examples": []
+        },
+        {
+          "name": "cursor",
+          "access": "",
+          "virtual": false,
+          "description": "",
+          "parameters": [],
+          "examples": []
+        }
+      ]
+    }
+  ]
+}
