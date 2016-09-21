@@ -5,7 +5,16 @@
       "access": "",
       "virtual": false,
       "description": "Create driver instance",
-      "parameters": [],
+      "parameters": [
+        {
+          "name": "args",
+          "type": "*",
+          "description": "",
+          "default": "",
+          "optional": "",
+          "nullable": ""
+        }
+      ],
       "examples": [],
       "returns": {
         "type": "MemoryDriver",

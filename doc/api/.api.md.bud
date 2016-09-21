@@ -30,16 +30,16 @@ module.exports = {
         [item.name]: wrapper(item)
       }), {})
       let classes = byName(jsdoc[ 'classes' ], { wrapper: asClass })
-      let { Driver } = classes
+      let { MemoryDriver } = classes
 
       let functions = byName(jsdoc[ 'functions' ], { wrapper: asFunc })
-      let { assertDriver } = functions
+      let { create } = functions
       return {
         classes: [
-          Driver
+          MemoryDriver
         ].filter(Boolean),
         functions: [
-          assertDriver
+          create
         ].filter(Boolean)
       }
     }
