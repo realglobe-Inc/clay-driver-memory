@@ -48,7 +48,7 @@
           "examples": []
         },
         {
-          "name": "close",
+          "name": "disconnect",
           "access": "",
           "virtual": false,
           "description": "",
