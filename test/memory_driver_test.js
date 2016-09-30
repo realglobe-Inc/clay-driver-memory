@@ -21,7 +21,7 @@ describe('memory-driver', function () {
 
   it('Memory driver', () => co(function * () {
     let driver = new MemoryDriver()
-    yield driver.open({})
+    yield driver.connect({})
     yield driver.create('/foo/0', { msg: 'This is foo' })
     assert.deepEqual(yield driver.read('/foo/0'), { msg: 'This is foo' })
     yield driver.update('/foo/0', { msg: 'This is foo 2' })
@@ -31,7 +31,7 @@ describe('memory-driver', function () {
       assert.deepEqual(record, { msg: 'This is foo 2' })
     }
     yield driver.delete('/foo/0')
-    yield driver.close({})
+    yield driver.disconnect({})
   }))
 })
 

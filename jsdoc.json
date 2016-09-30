@@ -40,7 +40,7 @@
       },
       "functions": [
         {
-          "name": "open",
+          "name": "connect",
           "access": "",
           "virtual": false,
           "description": "",

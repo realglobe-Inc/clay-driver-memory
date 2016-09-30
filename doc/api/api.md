@@ -1,4 +1,4 @@
-# clay-driver-memory@1.0.1
+# clay-driver-memory@1.0.2
 
 Clay driver to store data on memory.
 
@@ -6,7 +6,7 @@ Clay driver to store data on memory.
   + [create(args)](#clay-driver-memory-function-create)
 + [MemoryDriver](clay-driver-memory-classes) Class
   + [new MemoryDriver()](#clay-driver-memory-classes-memory-driver-constructor)
-  + [driver.open()](#clay-driver-memory-classes-memory-driver-open)
+  + [driver.connect()](#clay-driver-memory-classes-memory-driver-connect)
   + [driver.close()](#clay-driver-memory-classes-memory-driver-close)
   + [driver.create()](#clay-driver-memory-classes-memory-driver-create)
   + [driver.read()](#clay-driver-memory-classes-memory-driver-read)
@@ -43,9 +43,9 @@ Constructor of MemoryDriver class
 
 
 
-<a class='md-heading-link' name="clay-driver-memory-classes-memory-driver-open" ></a>
+<a class='md-heading-link' name="clay-driver-memory-classes-memory-driver-connect" ></a>
 
-### driver.open()
+### driver.connect()
 
 
 
