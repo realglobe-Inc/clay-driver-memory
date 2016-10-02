@@ -43,55 +43,178 @@
           "name": "connect",
           "access": "",
           "virtual": false,
-          "description": "",
-          "parameters": [],
-          "examples": []
+          "description": "Connect driver",
+          "parameters": [
+            {
+              "name": "config",
+              "type": "Object",
+              "description": "",
+              "default": "",
+              "optional": "",
+              "nullable": ""
+            }
+          ],
+          "examples": [],
+          "returns": {
+            "type": "Promise",
+            "description": ""
+          }
         },
         {
           "name": "disconnect",
           "access": "",
           "virtual": false,
-          "description": "",
-          "parameters": [],
-          "examples": []
+          "description": "Disconnect driver",
+          "parameters": [
+            {
+              "name": "config",
+              "type": "Object",
+              "description": "",
+              "default": "",
+              "optional": "",
+              "nullable": ""
+            }
+          ],
+          "examples": [],
+          "returns": {
+            "type": "Promise",
+            "description": ""
+          }
         },
         {
           "name": "create",
           "access": "",
           "virtual": false,
-          "description": "",
-          "parameters": [],
-          "examples": []
+          "description": "Create data with namepath",
+          "parameters": [
+            {
+              "name": "namepath",
+              "type": "string",
+              "description": "Namepath string",
+              "default": "",
+              "optional": "",
+              "nullable": ""
+            },
+            {
+              "name": "data",
+              "type": "Object",
+              "description": "Resource data to create",
+              "default": "",
+              "optional": "",
+              "nullable": ""
+            }
+          ],
+          "examples": [],
+          "returns": {
+            "type": "Promise",
+            "description": ""
+          }
         },
         {
           "name": "read",
           "access": "",
           "virtual": false,
-          "description": "",
-          "parameters": [],
-          "examples": []
+          "description": "Read data with namepath",
+          "parameters": [
+            {
+              "name": "namepath",
+              "type": "string",
+              "description": "Namepath string",
+              "default": "",
+              "optional": "",
+              "nullable": ""
+            }
+          ],
+          "examples": [],
+          "returns": {
+            "type": "Promise",
+            "description": ""
+          }
         },
         {
           "name": "update",
           "access": "",
           "virtual": false,
-          "description": "",
-          "parameters": [],
-          "examples": []
+          "description": "Update data with namepath",
+          "parameters": [
+            {
+              "name": "namepath",
+              "type": "string",
+              "description": "Namepath string",
+              "default": "",
+              "optional": "",
+              "nullable": ""
+            },
+            {
+              "name": "data",
+              "type": "Object",
+              "description": "Resource data to create",
+              "default": "",
+              "optional": "",
+              "nullable": ""
+            }
+          ],
+          "examples": [],
+          "returns": {
+            "type": "Promise",
+            "description": ""
+          }
         },
         {
           "name": "delete",
           "access": "",
           "virtual": false,
-          "description": "",
-          "parameters": [],
-          "examples": []
+          "description": "Delete data with namepath",
+          "parameters": [
+            {
+              "name": "namepath",
+              "type": "string",
+              "description": "Namepath string",
+              "default": "",
+              "optional": "",
+              "nullable": ""
+            }
+          ],
+          "examples": [],
+          "returns": {
+            "type": "Promise",
+            "description": ""
+          }
         },
         {
           "name": "cursor",
           "access": "",
           "virtual": false,
-          "description": "",
+          "description": "Get cursor to iterate",
+          "parameters": [
+            {
+              "name": "namepath",
+              "type": "string",
+              "description": "Namepath string",
+              "default": "",
+              "optional": "",
+              "nullable": ""
+            },
+            {
+              "name": "options",
+              "type": "Object",
+              "description": "Optional settings",
+              "default": "",
+              "optional": "",
+              "nullable": ""
+            }
+          ],
+          "examples": [],
+          "returns": {
+            "type": "Promise.<Driver.Cursor>",
+            "description": ""
+          }
+        },
+        {
+          "name": "assertConnected",
+          "access": "",
+          "virtual": false,
+          "description": "Assert that driver connected",
           "parameters": [],
           "examples": []
         }
