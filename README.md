@@ -96,7 +96,6 @@ const { MemoryDriver } = require('clay-driver-memory')
 API
 ---------
 
-```javascript
 # clay-driver-memory@1.1.1
 
 Clay driver to store data on memory.
@@ -187,7 +186,6 @@ Constructor of MemoryDriver class
 
 
 
-```
 
 
 <!-- Section from "doc/guides/03.API.md.hbs" End -->
