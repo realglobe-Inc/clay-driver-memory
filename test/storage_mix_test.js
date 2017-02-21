@@ -26,8 +26,10 @@ describe('storage-mix', function () {
     const StorageMixed = storageMix(Base)
     let instance = new StorageMixed()
 
-    assert.ok(instance.getStorage('foo'))
-    assert.ok(instance.getStorage('foo') === instance.getStorage('foo'))
+    let storage01 = yield instance.getStorage('foo')
+    assert.ok(storage01)
+    let storage02 = yield instance.getStorage('foo')
+    assert.ok(storage01 === storage02)
   }))
 })
 

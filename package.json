@@ -23,7 +23,6 @@
   },
   "homepage": "https://github.com/realglobe-Inc/clay-driver-memory#readme",
   "dependencies": {
-    "abind": "^1.0.3",
     "clay-collection": "^1.0.1",
     "clay-constants": "^0.7.1",
     "clay-driver-base": "^0.1.2",
@@ -31,8 +30,7 @@
     "clay-id": "^1.1.1",
     "clay-list-filter": "^1.0.1",
     "clay-list-pager": "^1.0.1",
-    "co": "^4.6.0",
-    "json-pointer": "^0.6.0"
+    "co": "^4.6.0"
   },
   "devDependencies": {
     "ababel": "^2.0.1",
