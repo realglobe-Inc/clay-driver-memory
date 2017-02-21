@@ -1,4 +1,4 @@
-# clay-driver-memory@1.2.1
+# clay-driver-memory@1.3.0
 
 Clay driver to store data on memory.
 
@@ -6,14 +6,11 @@ Clay driver to store data on memory.
   + [create(args)](#clay-driver-memory-function-create)
 + [MemoryDriver](clay-driver-memory-classes) Class
   + [new MemoryDriver()](#clay-driver-memory-classes-memory-driver-constructor)
-  + [driver.connect(config)](#clay-driver-memory-classes-memory-driver-connect)
-  + [driver.disconnect(config)](#clay-driver-memory-classes-memory-driver-disconnect)
-  + [driver.create(namepath, data)](#clay-driver-memory-classes-memory-driver-create)
-  + [driver.read(namepath)](#clay-driver-memory-classes-memory-driver-read)
-  + [driver.update(namepath, data)](#clay-driver-memory-classes-memory-driver-update)
-  + [driver.delete(namepath)](#clay-driver-memory-classes-memory-driver-delete)
-  + [driver.cursor(namepath, options)](#clay-driver-memory-classes-memory-driver-cursor)
-  + [driver.assertConnected()](#clay-driver-memory-classes-memory-driver-assertConnected)
+  + [driver.one()](#clay-driver-memory-classes-memory-driver-one)
+  + [driver.list()](#clay-driver-memory-classes-memory-driver-list)
+  + [driver.create()](#clay-driver-memory-classes-memory-driver-create)
+  + [driver.update()](#clay-driver-memory-classes-memory-driver-update)
+  + [driver.destroy()](#clay-driver-memory-classes-memory-driver-destroy)
 
 ## Functions
 
@@ -44,91 +41,35 @@ Constructor of MemoryDriver class
 
 
 
-<a class='md-heading-link' name="clay-driver-memory-classes-memory-driver-connect" ></a>
+<a class='md-heading-link' name="clay-driver-memory-classes-memory-driver-one" ></a>
 
-### driver.connect(config) -> `Promise`
-
-Connect driver
-
-| Param | Type | Description |
-| ----- | --- | -------- |
-| config | Object |  |
+### driver.one()
 
 
-<a class='md-heading-link' name="clay-driver-memory-classes-memory-driver-disconnect" ></a>
 
-### driver.disconnect(config) -> `Promise`
+<a class='md-heading-link' name="clay-driver-memory-classes-memory-driver-list" ></a>
 
-Disconnect driver
+### driver.list()
 
-| Param | Type | Description |
-| ----- | --- | -------- |
-| config | Object |  |
 
 
 <a class='md-heading-link' name="clay-driver-memory-classes-memory-driver-create" ></a>
 
-### driver.create(namepath, data) -> `Promise`
+### driver.create()
 
-Create data with namepath
-
-| Param | Type | Description |
-| ----- | --- | -------- |
-| namepath | string | Namepath string |
-| data | Object | Resource data to create |
-
-
-<a class='md-heading-link' name="clay-driver-memory-classes-memory-driver-read" ></a>
-
-### driver.read(namepath) -> `Promise`
-
-Read data with namepath
-
-| Param | Type | Description |
-| ----- | --- | -------- |
-| namepath | string | Namepath string |
 
 
 <a class='md-heading-link' name="clay-driver-memory-classes-memory-driver-update" ></a>
 
-### driver.update(namepath, data) -> `Promise`
-
-Update data with namepath
-
-| Param | Type | Description |
-| ----- | --- | -------- |
-| namepath | string | Namepath string |
-| data | Object | Resource data to create |
+### driver.update()
 
 
-<a class='md-heading-link' name="clay-driver-memory-classes-memory-driver-delete" ></a>
 
-### driver.delete(namepath) -> `Promise`
+<a class='md-heading-link' name="clay-driver-memory-classes-memory-driver-destroy" ></a>
 
-Delete data with namepath
-
-| Param | Type | Description |
-| ----- | --- | -------- |
-| namepath | string | Namepath string |
+### driver.destroy()
 
 
-<a class='md-heading-link' name="clay-driver-memory-classes-memory-driver-cursor" ></a>
-
-### driver.cursor(namepath, options) -> `Promise.<Driver.Cursor>`
-
-Get cursor to iterate
-
-| Param | Type | Description |
-| ----- | --- | -------- |
-| namepath | string | Namepath string |
-| options | Object | Optional settings |
-
-
-<a class='md-heading-link' name="clay-driver-memory-classes-memory-driver-assertConnected" ></a>
-
-### driver.assertConnected()
-
-Assert that driver connected
 
 
 
