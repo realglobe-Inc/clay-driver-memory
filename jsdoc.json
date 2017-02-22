@@ -34,7 +34,7 @@
       "fires": "",
       "constructor": {
         "name": "MemoryDriver",
-        "description": "Abstract driver",
+        "description": "Driver to store data on memory",
         "parameters": [],
         "examples": []
       },
