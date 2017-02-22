@@ -50,6 +50,8 @@ describe('memory-driver', function () {
     assert.equal(destroyed, 1)
     let destroyed2 = yield driver.destroy('users', one.id)
     assert.equal(destroyed2, 0)
+
+    yield driver.drop('users')
   }))
 })
 

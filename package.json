@@ -24,7 +24,7 @@
   "homepage": "https://github.com/realglobe-Inc/clay-driver-memory#readme",
   "dependencies": {
     "clay-collection": "^1.0.1",
-    "clay-constants": "^0.7.1",
+    "clay-constants": "^0.8.1",
     "clay-driver-base": "^0.1.2",
     "clay-entity": "^1.0.1",
     "clay-id": "^1.1.2",
