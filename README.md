@@ -96,7 +96,7 @@ const { MemoryDriver } = require('clay-driver-memory')
 API
 ---------
 
-# clay-driver-memory@2.0.1
+# clay-driver-memory@2.1.0
 
 Clay driver to store data on memory.
 
@@ -134,7 +134,7 @@ Create driver instance
 
 ## MemoryDriver Class
 
-Abstract driver
+Driver to store data on memory
 
 
 <a class='md-heading-link' name="clay-driver-memory-classes-memory-driver-constructor" ></a>
