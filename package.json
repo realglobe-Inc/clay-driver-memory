@@ -1,6 +1,6 @@
 {
   "name": "clay-driver-memory",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Clay driver to store data on memory.",
   "main": "lib",
   "browser": "ci/browser",
