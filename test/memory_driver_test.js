@@ -41,10 +41,18 @@ describe('memory-driver', function () {
     assert.equal(String(updated.id), String(one.id))
     assert.equal(updated.password, 'hogehoge')
 
-    let list = yield driver.list('users', {
+    let list01 = yield driver.list('users', {})
+    assert.deepEqual(list01.meta, { offset: 0, limit: 100, length: 2, total: 2 })
+
+    let list02 = yield driver.list('users', {
       filter: { username: 'okunishinishi' }
     })
-    assert.deepEqual(list.meta, { offset: 0, limit: 100, length: 1, total: 2 })
+    assert.deepEqual(list02.meta, { offset: 0, limit: 100, length: 1, total: 1 })
+
+    let list03 = yield driver.list('users', {
+      page: { size: 1, number: 1 }
+    })
+    assert.deepEqual(list03.meta, { offset: 0, limit: 1, length: 1, total: 2 })
 
     let destroyed = yield driver.destroy('users', one.id)
     assert.equal(destroyed, 1)
