@@ -1,10 +1,10 @@
-# clay-driver-memory@2.1.1
+# clay-driver-memory@2.1.2
 
 Clay driver to store data on memory.
 
 + Functions
   + [create(args)](#clay-driver-memory-function-create)
-+ [`MemoryDriver`](clay-driver-memory-classes) Class
++ [MemoryDriver](clay-driver-memory-classes) Class
   + [new MemoryDriver()](#clay-driver-memory-classes-memory-driver-constructor)
   + [driver.one()](#clay-driver-memory-classes-memory-driver-one)
   + [driver.list()](#clay-driver-memory-classes-memory-driver-list)
@@ -34,14 +34,9 @@ Create driver instance
 
 <a class='md-heading-link' name="clay-driver-memory-classes"></a>
 
-## `MemoryDriver` Class
+## MemoryDriver Class
 
 Driver to store data on memory
-
-**Extends**: 
-
-+ `Driver`
-
 
 
 <a class='md-heading-link' name="clay-driver-memory-classes-memory-driver-constructor" ></a>
