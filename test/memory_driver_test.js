@@ -5,7 +5,7 @@
 'use strict'
 
 const MemoryDriver = require('../lib/memory_driver.js')
-const assert = require('assert')
+const { ok, equal, deepEqual } = require('assert')
 const co = require('co')
 
 describe('memory-driver', function () {
@@ -27,41 +27,46 @@ describe('memory-driver', function () {
     let created2 = yield driver.create('users', {
       username: 'hoge'
     })
-    assert.ok(created2.id !== created.id)
-    assert.ok(created.id)
-    assert.equal(created.username, 'okunishinishi')
+    ok(created2.id !== created.id)
+    ok(created.id)
+    equal(created.username, 'okunishinishi')
 
     let one = yield driver.one('users', created.id)
 
-    assert.equal(String(created.id), String(one.id))
+    equal(String(created.id), String(one.id))
 
     let updated = yield driver.update('users', one.id, {
       password: 'hogehoge'
     })
-    assert.equal(String(updated.id), String(one.id))
-    assert.equal(updated.password, 'hogehoge')
+    equal(String(updated.id), String(one.id))
+    equal(updated.password, 'hogehoge')
 
     let list01 = yield driver.list('users', {})
-    assert.deepEqual(list01.meta, { offset: 0, limit: 100, length: 2, total: 2 })
+    deepEqual(list01.meta, { offset: 0, limit: 100, length: 2, total: 2 })
 
     let list02 = yield driver.list('users', {
       filter: { username: 'okunishinishi' }
     })
-    assert.deepEqual(list02.meta, { offset: 0, limit: 100, length: 1, total: 1 })
+    deepEqual(list02.meta, { offset: 0, limit: 100, length: 1, total: 1 })
 
     let list03 = yield driver.list('users', {
       page: { size: 1, number: 1 }
     })
-    assert.deepEqual(list03.meta, { offset: 0, limit: 1, length: 1, total: 2 })
+    deepEqual(list03.meta, { offset: 0, limit: 1, length: 1, total: 2 })
 
     let destroyed = yield driver.destroy('users', one.id)
-    assert.equal(destroyed, 1)
+    equal(destroyed, 1)
     let destroyed2 = yield driver.destroy('users', one.id)
-    assert.equal(destroyed2, 0)
+    equal(destroyed2, 0)
 
-    assert.equal((yield driver.list('users')).meta.total, 1)
+    let resources = yield driver.resources()
+    deepEqual(resources, [
+      { name: 'users', version: 'latest' }
+    ])
+
+    equal((yield driver.list('users')).meta.total, 1)
     yield driver.drop('users')
-    assert.equal((yield driver.list('users')).meta.total, 0)
+    equal((yield driver.list('users')).meta.total, 0)
   }))
 })
 
