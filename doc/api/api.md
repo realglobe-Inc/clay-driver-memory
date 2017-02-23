@@ -4,7 +4,7 @@ Clay driver to store data on memory.
 
 + Functions
   + [create(args)](#clay-driver-memory-function-create)
-+ [MemoryDriver](clay-driver-memory-classes) Class
++ [`MemoryDriver`](#clay-driver-memory-classes) Class
   + [new MemoryDriver()](#clay-driver-memory-classes-memory-driver-constructor)
   + [driver.one()](#clay-driver-memory-classes-memory-driver-one)
   + [driver.list()](#clay-driver-memory-classes-memory-driver-list)
@@ -12,6 +12,7 @@ Clay driver to store data on memory.
   + [driver.update()](#clay-driver-memory-classes-memory-driver-update)
   + [driver.destroy()](#clay-driver-memory-classes-memory-driver-destroy)
   + [driver.drop()](#clay-driver-memory-classes-memory-driver-drop)
+  + [driver.resources()](#clay-driver-memory-classes-memory-driver-resources)
   + [driver.one(namespace, id)](#clay-driver-memory-classes-memory-driver-one)
   + [driver.list(namespace, condition)](#clay-driver-memory-classes-memory-driver-list)
   + [driver.create(namespace, attributes)](#clay-driver-memory-classes-memory-driver-create)
@@ -34,9 +35,14 @@ Create driver instance
 
 <a class='md-heading-link' name="clay-driver-memory-classes"></a>
 
-## MemoryDriver Class
+## `MemoryDriver` Class
 
 Driver to store data on memory
+
+**Extends**: 
+
++ `Driver`
+
 
 
 <a class='md-heading-link' name="clay-driver-memory-classes-memory-driver-constructor" ></a>
@@ -80,6 +86,12 @@ Constructor of MemoryDriver class
 <a class='md-heading-link' name="clay-driver-memory-classes-memory-driver-drop" ></a>
 
 ### driver.drop()
+
+
+
+<a class='md-heading-link' name="clay-driver-memory-classes-memory-driver-resources" ></a>
+
+### driver.resources()
 
 
 

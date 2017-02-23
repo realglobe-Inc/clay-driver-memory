@@ -88,6 +88,14 @@
           "examples": []
         },
         {
+          "name": "resources",
+          "access": "",
+          "virtual": false,
+          "description": "",
+          "parameters": [],
+          "examples": []
+        },
+        {
           "name": "one",
           "access": "",
           "virtual": false,
