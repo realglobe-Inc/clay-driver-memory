@@ -61,7 +61,7 @@ describe('memory-driver', function () {
 
     let resources = yield driver.resources()
     deepEqual(resources, [
-      { name: 'users', version: 'latest' }
+      { name: 'users', domain: null }
     ])
 
     equal((yield driver.list('users')).meta.total, 1)
