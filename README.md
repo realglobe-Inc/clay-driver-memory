@@ -96,7 +96,7 @@ const { MemoryDriver } = require('clay-driver-memory')
 API
 ---------
 
-# clay-driver-memory@2.2.0
+# clay-driver-memory@3.0.1
 
 Clay driver to store data on memory.
 
