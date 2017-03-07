@@ -5,7 +5,7 @@
 'use strict'
 
 const MemoryDriver = require('../lib/memory_driver.js')
-const { ok, equal, deepEqual } = require('assert')
+const { ok, equal, deepEqual, strictEqual } = require('assert')
 const co = require('co')
 
 describe('memory-driver', function () {
@@ -34,6 +34,8 @@ describe('memory-driver', function () {
     let one = yield driver.one('users', created.id)
 
     equal(String(created.id), String(one.id))
+
+    strictEqual(yield driver.one('users', '__invalid_id_'), null)
 
     let updated = yield driver.update('users', one.id, {
       password: 'hogehoge'
