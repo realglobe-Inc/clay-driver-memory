@@ -1,18 +1,18 @@
-# clay-driver-memory@3.1.0
+# clay-driver-memory@4.0.0
 
 Clay driver to store data on memory.
 
 + Functions
   + [create(args)](#clay-driver-memory-function-create)
-+ [`MemoryDriver`](#clay-driver-memory-classes) Class
-  + [new MemoryDriver()](#clay-driver-memory-classes-memory-driver-constructor)
-  + [driver.one(resourceName, id)](#clay-driver-memory-classes-memory-driver-one)
-  + [driver.list(resourceName, condition)](#clay-driver-memory-classes-memory-driver-list)
-  + [driver.create(resourceName, attributes)](#clay-driver-memory-classes-memory-driver-create)
-  + [driver.update(resourceName, id, attributes)](#clay-driver-memory-classes-memory-driver-update)
-  + [driver.destroy(resourceName, id)](#clay-driver-memory-classes-memory-driver-destroy)
-  + [driver.drop(resourceName)](#clay-driver-memory-classes-memory-driver-drop)
-  + [driver.resources()](#clay-driver-memory-classes-memory-driver-resources)
++ [`MemoryDriver`](#clay-driver-memory-class) Class
+  + [new MemoryDriver()](#clay-driver-memory-class-memory-driver-constructor)
+  + [driver.one(resourceName, id)](#clay-driver-memory-class-memory-driver-one)
+  + [driver.list(resourceName, condition)](#clay-driver-memory-class-memory-driver-list)
+  + [driver.create(resourceName, attributes)](#clay-driver-memory-class-memory-driver-create)
+  + [driver.update(resourceName, id, attributes)](#clay-driver-memory-class-memory-driver-update)
+  + [driver.destroy(resourceName, id)](#clay-driver-memory-class-memory-driver-destroy)
+  + [driver.drop(resourceName)](#clay-driver-memory-class-memory-driver-drop)
+  + [driver.resources()](#clay-driver-memory-class-memory-driver-resources)
 
 ## Functions
 
@@ -28,19 +28,19 @@ Create driver instance
 
 
 
-<a class='md-heading-link' name="clay-driver-memory-classes"></a>
+<a class='md-heading-link' name="clay-driver-memory-class"></a>
 
 ## `MemoryDriver` Class
 
 Driver to store data on memory
 
-**Extends**: 
+**Extends**:
 
 + `Driver`
 
 
 
-<a class='md-heading-link' name="clay-driver-memory-classes-memory-driver-constructor" ></a>
+<a class='md-heading-link' name="clay-driver-memory-class-memory-driver-constructor" ></a>
 
 ### new MemoryDriver()
 
@@ -48,7 +48,7 @@ Constructor of MemoryDriver class
 
 
 
-<a class='md-heading-link' name="clay-driver-memory-classes-memory-driver-one" ></a>
+<a class='md-heading-link' name="clay-driver-memory-class-memory-driver-one" ></a>
 
 ### driver.one(resourceName, id) -> `Promise.<ClayEntity>`
 
@@ -60,7 +60,7 @@ Get single entity from resource
 | id | ClayId | Resource id |
 
 
-<a class='md-heading-link' name="clay-driver-memory-classes-memory-driver-list" ></a>
+<a class='md-heading-link' name="clay-driver-memory-class-memory-driver-list" ></a>
 
 ### driver.list(resourceName, condition) -> `Promise.<ClayCollection>`
 
@@ -72,7 +72,7 @@ List entities from resource
 | condition | ListCondition | List condition query |
 
 
-<a class='md-heading-link' name="clay-driver-memory-classes-memory-driver-create" ></a>
+<a class='md-heading-link' name="clay-driver-memory-class-memory-driver-create" ></a>
 
 ### driver.create(resourceName, attributes) -> `Promise.<ClayEntity>`
 
@@ -84,7 +84,7 @@ Create a new entity with resource
 | attributes | Object | Resource attributes to create |
 
 
-<a class='md-heading-link' name="clay-driver-memory-classes-memory-driver-update" ></a>
+<a class='md-heading-link' name="clay-driver-memory-class-memory-driver-update" ></a>
 
 ### driver.update(resourceName, id, attributes) -> `Promise.<ClayEntity>`
 
@@ -97,7 +97,7 @@ Update an existing entity in resource
 | attributes | Object | Resource attributes to update |
 
 
-<a class='md-heading-link' name="clay-driver-memory-classes-memory-driver-destroy" ></a>
+<a class='md-heading-link' name="clay-driver-memory-class-memory-driver-destroy" ></a>
 
 ### driver.destroy(resourceName, id) -> `Promise.<number>`
 
@@ -109,7 +109,7 @@ Delete a entity resource
 | id | ClayId | Resource id |
 
 
-<a class='md-heading-link' name="clay-driver-memory-classes-memory-driver-drop" ></a>
+<a class='md-heading-link' name="clay-driver-memory-class-memory-driver-drop" ></a>
 
 ### driver.drop(resourceName) -> `Promise.<boolean>`
 
@@ -120,7 +120,7 @@ Drop resource
 | resourceName | string | Name of resource |
 
 
-<a class='md-heading-link' name="clay-driver-memory-classes-memory-driver-resources" ></a>
+<a class='md-heading-link' name="clay-driver-memory-class-memory-driver-resources" ></a>
 
 ### driver.resources() -> `Promise.<Resource>`
 
