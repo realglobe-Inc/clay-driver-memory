@@ -25,12 +25,12 @@
   "dependencies": {
     "clay-collection": "^2.0.1",
     "clay-constants": "^3.0.1",
-    "clay-driver-base": "^2.0.1",
+    "clay-driver-base": "^3.0.1",
     "clay-entity": "^2.0.1",
     "clay-id": "^3.0.1",
     "clay-list-filter": "^2.0.1",
     "clay-list-pager": "^2.0.1",
-    "clay-list-sorter": "^1.0.1",
+    "clay-list-sorter": "^2.0.1",
     "clay-resource-name": "^4.0.1",
     "co": "^4.6.0"
   },
