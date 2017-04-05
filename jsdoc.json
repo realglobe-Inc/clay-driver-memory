@@ -43,62 +43,6 @@
           "name": "one",
           "access": "",
           "virtual": false,
-          "description": "",
-          "parameters": [],
-          "examples": []
-        },
-        {
-          "name": "list",
-          "access": "",
-          "virtual": false,
-          "description": "",
-          "parameters": [],
-          "examples": []
-        },
-        {
-          "name": "create",
-          "access": "",
-          "virtual": false,
-          "description": "",
-          "parameters": [],
-          "examples": []
-        },
-        {
-          "name": "update",
-          "access": "",
-          "virtual": false,
-          "description": "",
-          "parameters": [],
-          "examples": []
-        },
-        {
-          "name": "destroy",
-          "access": "",
-          "virtual": false,
-          "description": "",
-          "parameters": [],
-          "examples": []
-        },
-        {
-          "name": "drop",
-          "access": "",
-          "virtual": false,
-          "description": "",
-          "parameters": [],
-          "examples": []
-        },
-        {
-          "name": "resources",
-          "access": "",
-          "virtual": false,
-          "description": "",
-          "parameters": [],
-          "examples": []
-        },
-        {
-          "name": "one",
-          "access": "",
-          "virtual": false,
           "description": "Get single entity from resource",
           "parameters": [
             {

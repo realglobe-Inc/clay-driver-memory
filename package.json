@@ -1,6 +1,6 @@
 {
   "name": "clay-driver-memory",
-  "version": "3.0.2",
+  "version": "3.1.1",
   "description": "Clay driver to store data on memory.",
   "main": "lib",
   "browser": "ci/browser",
@@ -28,8 +28,9 @@
     "clay-driver-base": "^2.0.1",
     "clay-entity": "^1.5.2",
     "clay-id": "^2.0.2",
-    "clay-list-filter": "^1.0.1",
+    "clay-list-filter": "^1.0.2",
     "clay-list-pager": "^1.1.1",
+    "clay-list-sorter": "^1.0.1",
     "clay-resource-name": "^3.0.1",
     "co": "^4.6.0"
   },

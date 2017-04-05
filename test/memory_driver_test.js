@@ -5,7 +5,7 @@
 'use strict'
 
 const MemoryDriver = require('../lib/memory_driver.js')
-const { ok, equal, deepEqual } = require('assert')
+const { ok, equal, deepEqual, strictEqual } = require('assert')
 const co = require('co')
 
 describe('memory-driver', function () {
@@ -22,10 +22,12 @@ describe('memory-driver', function () {
   it('Memory driver', () => co(function * () {
     let driver = new MemoryDriver()
     let created = yield driver.create('users', {
-      username: 'okunishinishi'
+      username: 'okunishinishi',
+      index: 5
     })
     let created2 = yield driver.create('users', {
-      username: 'hoge'
+      username: 'hoge',
+      index: 3
     })
     ok(created2.id !== created.id)
     ok(created.id)
@@ -34,6 +36,8 @@ describe('memory-driver', function () {
     let one = yield driver.one('users', created.id)
 
     equal(String(created.id), String(one.id))
+
+    strictEqual(yield driver.one('users', '__invalid_id_'), null)
 
     let updated = yield driver.update('users', one.id, {
       password: 'hogehoge'
@@ -53,6 +57,16 @@ describe('memory-driver', function () {
       page: { size: 1, number: 1 }
     })
     deepEqual(list03.meta, { offset: 0, limit: 1, length: 1, total: 2 })
+
+    let list04 = yield driver.list('users', {
+      sort: [ 'index' ]
+    })
+    equal(list04.entities[ 0 ].username, 'hoge')
+
+    let list05 = yield driver.list('users', {
+      sort: [ '-index' ]
+    })
+    equal(list05.entities[ 0 ].username, 'okunishinishi')
 
     let destroyed = yield driver.destroy('users', one.id)
     equal(destroyed, 1)
