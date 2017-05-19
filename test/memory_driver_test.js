@@ -21,11 +21,11 @@ describe('memory-driver', function () {
 
   it('Memory driver', () => co(function * () {
     let driver = new MemoryDriver()
-    let created = yield driver.create('users', {
+    let created = yield driver.create('User', {
       username: 'okunishinishi',
       index: 5
     })
-    let created2 = yield driver.create('users', {
+    let created2 = yield driver.create('User', {
       username: 'hoge',
       index: 3
     })
@@ -33,54 +33,62 @@ describe('memory-driver', function () {
     ok(created.id)
     equal(created.username, 'okunishinishi')
 
-    let one = yield driver.one('users', created.id)
+    let one = yield driver.one('User', created.id)
 
     equal(String(created.id), String(one.id))
 
-    strictEqual(yield driver.one('users', '__invalid_id_'), null)
+    strictEqual(yield driver.one('User', '__invalid_id_'), null)
 
-    let updated = yield driver.update('users', one.id, {
+    let updated = yield driver.update('User', one.id, {
       password: 'hogehoge'
     })
     equal(String(updated.id), String(one.id))
     equal(updated.password, 'hogehoge')
 
-    let list01 = yield driver.list('users', {})
+    let list01 = yield driver.list('User', {})
     deepEqual(list01.meta, { offset: 0, limit: 100, length: 2, total: 2 })
 
-    let list02 = yield driver.list('users', {
+    let list02 = yield driver.list('User', {
       filter: { username: 'okunishinishi' }
     })
     deepEqual(list02.meta, { offset: 0, limit: 100, length: 1, total: 1 })
 
-    let list03 = yield driver.list('users', {
+    let list03 = yield driver.list('User', {
       page: { size: 1, number: 1 }
     })
     deepEqual(list03.meta, { offset: 0, limit: 1, length: 1, total: 2 })
 
-    let list04 = yield driver.list('users', {
+    let list04 = yield driver.list('User', {
       sort: [ 'index' ]
     })
     equal(list04.entities[ 0 ].username, 'hoge')
 
-    let list05 = yield driver.list('users', {
+    let list05 = yield driver.list('User', {
       sort: [ '-index' ]
     })
     equal(list05.entities[ 0 ].username, 'okunishinishi')
 
-    let destroyed = yield driver.destroy('users', one.id)
+    let destroyed = yield driver.destroy('User', one.id)
     equal(destroyed, 1)
-    let destroyed2 = yield driver.destroy('users', one.id)
+    let destroyed2 = yield driver.destroy('User', one.id)
     equal(destroyed2, 0)
 
     let resources = yield driver.resources()
     deepEqual(resources, [
-      { name: 'users', domain: null }
+      { name: 'User', domain: null }
     ])
 
-    equal((yield driver.list('users')).meta.total, 1)
-    yield driver.drop('users')
-    equal((yield driver.list('users')).meta.total, 0)
+    equal((yield driver.list('User')).meta.total, 1)
+    yield driver.drop('User')
+    equal((yield driver.list('User')).meta.total, 0)
+  }))
+
+  it('Custom id', () => co(function * () {
+    let driver = new MemoryDriver()
+    let org01 = yield driver.create('Org', {
+      id: '1'
+    })
+    equal(org01.id, '1')
   }))
 })
 
