@@ -89,6 +89,9 @@ describe('memory-driver', function () {
       id: '1'
     })
     equal(org01.id, '1')
+
+    let one = yield driver.one('Org', org01.id)
+    equal(one.id, org01.id)
   }))
 })
 
