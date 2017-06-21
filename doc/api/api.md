@@ -1,4 +1,4 @@
-# clay-driver-memory@4.0.3
+# clay-driver-memory@4.0.4
 
 Clay driver to store data on memory.
 

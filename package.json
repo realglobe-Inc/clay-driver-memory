@@ -24,19 +24,19 @@
   "homepage": "https://github.com/realglobe-Inc/clay-driver-memory#readme",
   "dependencies": {
     "clay-collection": "^3.0.1",
-    "clay-constants": "^3.0.1",
+    "clay-constants": "^3.0.3",
     "clay-driver-base": "^3.0.1",
-    "clay-entity": "^2.0.1",
-    "clay-id": "^3.0.1",
-    "clay-list-filter": "^2.0.1",
+    "clay-entity": "^2.0.4",
+    "clay-id": "^3.0.2",
+    "clay-list-filter": "^2.1.2",
     "clay-list-pager": "^2.0.1",
     "clay-list-sorter": "^2.0.1",
     "clay-resource-name": "^4.0.1",
     "co": "^4.6.0"
   },
   "devDependencies": {
-    "ababel": "^2.0.1",
-    "ababel-es2015": "^2.0.1",
+    "ababel": "^2.0.2",
+    "ababel-es2015": "^2.0.2",
     "amocha": "^2.0.0",
     "ape-formatting": "^1.0.2",
     "ape-releasing": "^4.0.4",
@@ -47,7 +47,7 @@
     "injectmock": "^2.0.0",
     "request": "^2.81.0",
     "sg-templates": "^1.4.4",
-    "stringcase": "^3.2.1",
+    "stringcase": "^4.0.0",
     "sugos-travis": "^2.0.7"
   },
   "engines": {
