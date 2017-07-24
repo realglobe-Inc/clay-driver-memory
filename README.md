@@ -91,12 +91,12 @@ const { MemoryDriver } = require('clay-driver-memory')
 
 <!-- Section from "doc/guides/03.API.md.hbs" Start -->
 
-<a name="section-doc-guides-03-a-p-i-md"></a>
+<a name="section-doc-guides-03-ap-i-md"></a>
 
 API
 ---------
 
-# clay-driver-memory@4.0.4
+# clay-driver-memory@4.0.5
 
 Clay driver to store data on memory.
 
