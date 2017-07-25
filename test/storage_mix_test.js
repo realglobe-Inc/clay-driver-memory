@@ -20,16 +20,7 @@ describe('storage-mix', function () {
   }))
 
   it('Storage mix', () => co(function * () {
-    class Base {
 
-    }
-    const StorageMixed = storageMix(Base)
-    let instance = new StorageMixed()
-
-    let storage01 = yield instance.getStorage('foo')
-    assert.ok(storage01)
-    let storage02 = yield instance.getStorage('foo')
-    assert.ok(storage01 === storage02)
   }))
 })
 

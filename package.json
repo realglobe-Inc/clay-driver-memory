@@ -1,6 +1,6 @@
 {
   "name": "clay-driver-memory",
-  "version": "4.0.5",
+  "version": "4.1.0",
   "description": "Clay driver to store data on memory.",
   "main": "lib",
   "browser": "ci/browser",
@@ -25,14 +25,13 @@
   "dependencies": {
     "clay-collection": "^3.0.1",
     "clay-constants": "^3.0.3",
-    "clay-driver-base": "^3.0.1",
+    "clay-driver-base": "^3.1.3",
     "clay-entity": "^2.0.4",
     "clay-id": "^3.0.2",
-    "clay-list-filter": "^2.1.2",
-    "clay-list-pager": "^2.0.1",
+    "clay-list-filter": "^2.1.4",
+    "clay-list-pager": "^2.0.2",
     "clay-list-sorter": "^2.0.1",
-    "clay-resource-name": "^4.0.1",
-    "co": "^4.6.0"
+    "clay-resource-name": "^4.0.2"
   },
   "devDependencies": {
     "ababel": "^2.0.2",
@@ -48,10 +47,11 @@
     "request": "^2.81.0",
     "sg-templates": "^1.4.4",
     "stringcase": "^4.0.0",
-    "sugos-travis": "^2.0.7"
+    "sugos-travis": "^2.0.7",
+    "the-script-jsdoc": "^1.0.8"
   },
   "engines": {
-    "node": ">=6",
+    "node": ">=7.6",
     "npm": ">=4"
   }
 }

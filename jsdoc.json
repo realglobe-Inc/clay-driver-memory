@@ -1,433 +1,122 @@
 {
-  "functions": [
-    {
-      "name": "create",
-      "access": "",
-      "virtual": false,
-      "description": "Create driver instance",
-      "parameters": [
+    "functions": [
         {
-          "name": "args",
-          "type": "*",
-          "description": "",
-          "default": "",
-          "optional": "",
-          "nullable": ""
+            "name": "create",
+            "access": "",
+            "virtual": false,
+            "description": "Create driver instance",
+            "parameters": [
+                {
+                    "name": "args",
+                    "type": "*",
+                    "description": "",
+                    "default": "",
+                    "optional": "",
+                    "nullable": ""
+                }
+            ],
+            "examples": [],
+            "returns": {
+                "type": "MemoryDriver",
+                "description": ""
+            }
+        },
+        {
+            "name": "create",
+            "access": "",
+            "virtual": false,
+            "description": "Create driver instance",
+            "parameters": [
+                {
+                    "name": "args",
+                    "type": "*",
+                    "description": "",
+                    "default": "",
+                    "optional": "",
+                    "nullable": ""
+                }
+            ],
+            "examples": [],
+            "returns": {
+                "type": "MemoryDriver",
+                "description": ""
+            }
+        },
+        {
+            "name": "namingMix",
+            "access": "",
+            "virtual": false,
+            "description": "Mix naming support",
+            "parameters": [
+                {
+                    "name": "BaseClass",
+                    "type": "function",
+                    "description": "Class to mix",
+                    "default": "",
+                    "optional": "",
+                    "nullable": ""
+                }
+            ],
+            "examples": [],
+            "returns": {
+                "type": "function",
+                "description": "Mixed class"
+            }
+        },
+        {
+            "name": "storageMix",
+            "access": "",
+            "virtual": false,
+            "description": "Mix storage support",
+            "parameters": [
+                {
+                    "name": "BaseClass",
+                    "type": "function",
+                    "description": "Class to mix",
+                    "default": "",
+                    "optional": "",
+                    "nullable": ""
+                }
+            ],
+            "examples": [],
+            "returns": {
+                "type": "function",
+                "description": "Mixed class"
+            }
         }
-      ],
-      "examples": [],
-      "returns": {
-        "type": "MemoryDriver",
-        "description": ""
-      }
-    }
-  ],
-  "classes": [
-    {
-      "name": "MemoryDriver",
-      "description": "",
-      "extends": [
-        "Driver"
-      ],
-      "access": "",
-      "virtual": false,
-      "fires": "",
-      "constructor": {
-        "name": "MemoryDriver",
-        "description": "Driver to store data on memory",
-        "parameters": [],
-        "examples": []
-      },
-      "functions": [
+    ],
+    "classes": [
         {
-          "name": "one",
-          "access": "",
-          "virtual": false,
-          "description": "Get single entity from resource",
-          "parameters": [
-            {
-              "name": "resourceName",
-              "type": "string",
-              "description": "Name of resource",
-              "default": "",
-              "optional": "",
-              "nullable": ""
-            },
-            {
-              "name": "id",
-              "type": "ClayId",
-              "description": "Resource id",
-              "default": "",
-              "optional": "",
-              "nullable": ""
+            "name": "MemoryDriver",
+            "description": "",
+            "extends": [
+                "Driver"
+            ],
+            "access": "",
+            "virtual": false,
+            "fires": "",
+            "constructor": {
+                "name": "MemoryDriver",
+                "description": "Driver to store data on memory",
+                "parameters": [],
+                "examples": []
             }
-          ],
-          "examples": [],
-          "returns": {
-            "type": "Promise.<ClayEntity>",
-            "description": "Found resource"
-          }
         },
         {
-          "name": "list",
-          "access": "",
-          "virtual": false,
-          "description": "List entities from resource",
-          "parameters": [
-            {
-              "name": "resourceName",
-              "type": "string",
-              "description": "Name of resource",
-              "default": "",
-              "optional": "",
-              "nullable": ""
-            },
-            {
-              "name": "condition",
-              "type": "ListCondition",
-              "description": "List condition query",
-              "default": "{}",
-              "optional": true,
-              "nullable": ""
+            "name": "MemoryDriver",
+            "description": "",
+            "extends": [
+                "Driver"
+            ],
+            "access": "",
+            "virtual": false,
+            "fires": "",
+            "constructor": {
+                "name": "MemoryDriver",
+                "description": "Driver to store data on memory",
+                "parameters": [],
+                "examples": []
             }
-          ],
-          "examples": [],
-          "returns": {
-            "type": "Promise.<ClayCollection>",
-            "description": "Found resource collection"
-          }
-        },
-        {
-          "name": "create",
-          "access": "",
-          "virtual": false,
-          "description": "Create a new entity with resource",
-          "parameters": [
-            {
-              "name": "resourceName",
-              "type": "string",
-              "description": "Name of resource",
-              "default": "",
-              "optional": "",
-              "nullable": ""
-            },
-            {
-              "name": "attributes",
-              "type": "Object",
-              "description": "Resource attributes to create",
-              "default": "",
-              "optional": "",
-              "nullable": ""
-            }
-          ],
-          "examples": [],
-          "returns": {
-            "type": "Promise.<ClayEntity>",
-            "description": "Created data"
-          }
-        },
-        {
-          "name": "update",
-          "access": "",
-          "virtual": false,
-          "description": "Update an existing entity in resource",
-          "parameters": [
-            {
-              "name": "resourceName",
-              "type": "string",
-              "description": "Name of resource",
-              "default": "",
-              "optional": "",
-              "nullable": ""
-            },
-            {
-              "name": "id",
-              "type": "ClayId",
-              "description": "Resource id",
-              "default": "",
-              "optional": "",
-              "nullable": ""
-            },
-            {
-              "name": "attributes",
-              "type": "Object",
-              "description": "Resource attributes to update",
-              "default": "",
-              "optional": "",
-              "nullable": ""
-            }
-          ],
-          "examples": [],
-          "returns": {
-            "type": "Promise.<ClayEntity>",
-            "description": "Updated data"
-          }
-        },
-        {
-          "name": "destroy",
-          "access": "",
-          "virtual": false,
-          "description": "Delete a entity resource",
-          "parameters": [
-            {
-              "name": "resourceName",
-              "type": "string",
-              "description": "Name of resource",
-              "default": "",
-              "optional": "",
-              "nullable": ""
-            },
-            {
-              "name": "id",
-              "type": "ClayId",
-              "description": "Resource id",
-              "default": "",
-              "optional": "",
-              "nullable": ""
-            }
-          ],
-          "examples": [],
-          "returns": {
-            "type": "Promise.<number>",
-            "description": "Destroyed count (0 or 1)"
-          }
-        },
-        {
-          "name": "drop",
-          "access": "",
-          "virtual": false,
-          "description": "Drop resource",
-          "parameters": [
-            {
-              "name": "resourceName",
-              "type": "string",
-              "description": "Name of resource",
-              "default": "",
-              "optional": "",
-              "nullable": ""
-            }
-          ],
-          "examples": [],
-          "returns": {
-            "type": "Promise.<boolean>",
-            "description": "False if there were nothing to drop"
-          }
-        },
-        {
-          "name": "resources",
-          "access": "",
-          "virtual": false,
-          "description": "List resources",
-          "parameters": [],
-          "examples": [],
-          "returns": {
-            "type": "Promise.<Resource>",
-            "description": "Resources"
-          }
         }
-      ]
-    },
-    {
-      "name": "Driver",
-      "description": "",
-      "extends": [],
-      "access": "",
-      "virtual": true,
-      "fires": "",
-      "constructor": {
-        "name": "Driver",
-        "description": "Abstract driver",
-        "parameters": [],
-        "examples": []
-      },
-      "functions": [
-        {
-          "name": "one",
-          "access": "",
-          "virtual": false,
-          "description": "Get single entity from resource",
-          "parameters": [
-            {
-              "name": "resourceName",
-              "type": "string",
-              "description": "Name of resource",
-              "default": "",
-              "optional": "",
-              "nullable": ""
-            },
-            {
-              "name": "id",
-              "type": "ClayId",
-              "description": "Resource id",
-              "default": "",
-              "optional": "",
-              "nullable": ""
-            }
-          ],
-          "examples": [],
-          "returns": {
-            "type": "Promise.<ClayEntity>",
-            "description": "Found resource"
-          }
-        },
-        {
-          "name": "list",
-          "access": "",
-          "virtual": false,
-          "description": "List entities from resource",
-          "parameters": [
-            {
-              "name": "resourceName",
-              "type": "string",
-              "description": "Name of resource",
-              "default": "",
-              "optional": "",
-              "nullable": ""
-            },
-            {
-              "name": "condition",
-              "type": "ListCondition",
-              "description": "List condition query",
-              "default": "{}",
-              "optional": true,
-              "nullable": ""
-            }
-          ],
-          "examples": [],
-          "returns": {
-            "type": "Promise.<ClayCollection>",
-            "description": "Found resource collection"
-          }
-        },
-        {
-          "name": "create",
-          "access": "",
-          "virtual": false,
-          "description": "Create a new entity with resource",
-          "parameters": [
-            {
-              "name": "resourceName",
-              "type": "string",
-              "description": "Name of resource",
-              "default": "",
-              "optional": "",
-              "nullable": ""
-            },
-            {
-              "name": "attributes",
-              "type": "Object",
-              "description": "Resource attributes to create",
-              "default": "",
-              "optional": "",
-              "nullable": ""
-            }
-          ],
-          "examples": [],
-          "returns": {
-            "type": "Promise.<ClayEntity>",
-            "description": "Created data"
-          }
-        },
-        {
-          "name": "update",
-          "access": "",
-          "virtual": false,
-          "description": "Update an existing entity in resource",
-          "parameters": [
-            {
-              "name": "resourceName",
-              "type": "string",
-              "description": "Name of resource",
-              "default": "",
-              "optional": "",
-              "nullable": ""
-            },
-            {
-              "name": "id",
-              "type": "ClayId",
-              "description": "Resource id",
-              "default": "",
-              "optional": "",
-              "nullable": ""
-            },
-            {
-              "name": "attributes",
-              "type": "Object",
-              "description": "Resource attributes to update",
-              "default": "",
-              "optional": "",
-              "nullable": ""
-            }
-          ],
-          "examples": [],
-          "returns": {
-            "type": "Promise.<ClayEntity>",
-            "description": "Updated data"
-          }
-        },
-        {
-          "name": "destroy",
-          "access": "",
-          "virtual": false,
-          "description": "Delete a entity resource",
-          "parameters": [
-            {
-              "name": "resourceName",
-              "type": "string",
-              "description": "Name of resource",
-              "default": "",
-              "optional": "",
-              "nullable": ""
-            },
-            {
-              "name": "id",
-              "type": "ClayId",
-              "description": "Resource id",
-              "default": "",
-              "optional": "",
-              "nullable": ""
-            }
-          ],
-          "examples": [],
-          "returns": {
-            "type": "Promise.<number>",
-            "description": "Destroyed count (0 or 1)"
-          }
-        },
-        {
-          "name": "drop",
-          "access": "",
-          "virtual": false,
-          "description": "Drop resource",
-          "parameters": [
-            {
-              "name": "resourceName",
-              "type": "string",
-              "description": "Name of resource",
-              "default": "",
-              "optional": "",
-              "nullable": ""
-            }
-          ],
-          "examples": [],
-          "returns": {
-            "type": "Promise.<boolean>",
-            "description": "False if there were nothing to drop"
-          }
-        },
-        {
-          "name": "resources",
-          "access": "",
-          "virtual": false,
-          "description": "List resources",
-          "parameters": [],
-          "examples": [],
-          "returns": {
-            "type": "Promise.<Resource>",
-            "description": "Resources"
-          }
-        }
-      ]
-    }
-  ]
+    ]
 }
