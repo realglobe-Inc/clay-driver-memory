@@ -29,7 +29,7 @@
     "clay-driver-base": "^4.0.1",
     "clay-entity": "^2.1.3",
     "clay-id": "^3.0.2",
-    "clay-list-filter": "^2.1.5",
+    "clay-list-filter": "^2.1.6",
     "clay-list-pager": "^2.1.1",
     "clay-list-sorter": "^2.0.1",
     "clay-resource-name": "^4.0.3",
