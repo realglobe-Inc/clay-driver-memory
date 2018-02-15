@@ -29,7 +29,7 @@
     "clay-driver-base": "^4.0.1",
     "clay-entity": "^2.1.4",
     "clay-id": "^3.0.2",
-    "clay-list-filter": "^2.1.7",
+    "clay-list-filter": "^2.1.8",
     "clay-list-pager": "^2.1.1",
     "clay-list-sorter": "^2.0.1",
     "clay-resource-name": "^4.0.3",
@@ -37,7 +37,7 @@
   },
   "devDependencies": {
     "ababel": "^4.0.6",
-    "amocha": "^4.0.0",
+    "amocha": "^5.0.0",
     "ape-formatting": "^1.0.2",
     "ape-releasing": "^4.0.4",
     "ape-tasking": "^4.0.9",
@@ -47,7 +47,7 @@
     "injectmock": "^2.0.0",
     "request": "^2.83.0",
     "sg-templates": "^1.4.4",
-    "stringcase": "^4.1.0",
+    "stringcase": "^4.1.1",
     "sugos-travis": "^2.0.7",
     "the-script-jsdoc": "^2.0.1"
   },
