@@ -22,27 +22,6 @@
             }
         },
         {
-            "name": "create",
-            "access": "",
-            "virtual": false,
-            "description": "Create driver instance",
-            "parameters": [
-                {
-                    "name": "args",
-                    "type": "*",
-                    "description": "",
-                    "default": "",
-                    "optional": "",
-                    "nullable": ""
-                }
-            ],
-            "examples": [],
-            "returns": {
-                "type": "MemoryDriver",
-                "description": ""
-            }
-        },
-        {
             "name": "namingMix",
             "access": "",
             "virtual": false,
@@ -86,22 +65,6 @@
         }
     ],
     "classes": [
-        {
-            "name": "MemoryDriver",
-            "description": "",
-            "extends": [
-                "Driver"
-            ],
-            "access": "",
-            "virtual": false,
-            "fires": "",
-            "constructor": {
-                "name": "MemoryDriver",
-                "description": "Driver to store data on memory",
-                "parameters": [],
-                "examples": []
-            }
-        },
         {
             "name": "MemoryDriver",
             "description": "",
