@@ -6,9 +6,10 @@
 
 const MemoryDriver = require('../lib/memory_driver.js')
 const {ok, equal, deepEqual, strictEqual} = require('assert')
+const leakage = require('leakage')
 
 describe('memory-driver', function () {
-  this.timeout(3000)
+  this.timeout(30000)
 
   before(async () => {
 
@@ -97,6 +98,16 @@ describe('memory-driver', function () {
     equal(one.id, org01.id)
 
     await driver.dump(`${__dirname}/../tmp/testing-dump`)
+    await driver.close()
+  })
+
+  it('leakage', async () => {
+    const driver = new MemoryDriver()
+    await driver.drop('L')
+    await leakage.iterate.async(async () => {
+      const created = await driver.create('L', {a: 1})
+      await driver.destroy('L', created.id)
+    })
     await driver.close()
   })
 })

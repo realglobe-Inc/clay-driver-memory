@@ -45,6 +45,7 @@
     "ape-updating": "^4.1.1",
     "coz": "^7.0.1",
     "injectmock": "^2.0.0",
+    "leakage": "^0.4.0",
     "request": "^2.85.0",
     "sg-templates": "^1.4.4",
     "stringcase": "^4.1.1",
