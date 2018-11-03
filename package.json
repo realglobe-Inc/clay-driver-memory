@@ -27,7 +27,7 @@
     "clay-collection": "^3.1.5",
     "clay-constants": "^3.4.4",
     "clay-driver-base": "^4.1.5",
-    "clay-entity": "^2.1.9",
+    "clay-entity": "^2.1.10",
     "clay-id": "^3.0.2",
     "clay-list-filter": "^2.1.8",
     "clay-list-pager": "^3.0.1",
