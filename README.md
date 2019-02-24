@@ -91,7 +91,7 @@ const { MemoryDriver } = require('clay-driver-memory')
 
 <!-- Section from "doc/guides/03.API.md.hbs" Start -->
 
-<a name="section-doc-guides-03-a-p-i-md"></a>
+<a name="section-doc-guides-03-api-md"></a>
 
 API
 ---------
