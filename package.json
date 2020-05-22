@@ -1,6 +1,6 @@
 {
   "name": "clay-driver-memory",
-  "version": "4.1.22",
+  "version": "4.1.23",
   "description": "Clay driver to store data on memory.",
   "main": "lib",
   "browser": "ci/browser",
@@ -23,7 +23,6 @@
   },
   "homepage": "https://github.com/realglobe-Inc/clay-driver-memory#readme",
   "dependencies": {
-    "amkdirp": "^2.0.0",
     "clay-collection": "^3.1.5",
     "clay-constants": "^3.4.4",
     "clay-driver-base": "^4.1.7",
