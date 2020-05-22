@@ -33,11 +33,12 @@
     "clay-list-pager": "^3.0.1",
     "clay-list-sorter": "^2.0.2",
     "clay-resource-name": "^4.0.5",
+    "mkdirp": "^1.0.4",
     "moment": "^2.24.0"
   },
   "devDependencies": {
     "ababel": "^6.0.0",
-    "amocha": "^6.0.0",
+    "amocha": "^7.0.2",
     "ape-formatting": "^2.0.2",
     "ape-releasing": "^5.0.7",
     "ape-tasking": "^4.0.12",
@@ -45,7 +46,6 @@
     "ape-updating": "^5.0.3",
     "coz": "^7.0.19",
     "injectmock": "^2.0.0",
-    "leakage": "^0.4.0",
     "request": "^2.88.0",
     "sg-templates": "^1.4.4",
     "stringcase": "^4.3.1",
@@ -53,7 +53,7 @@
     "the-script-jsdoc": "^2.0.4"
   },
   "engines": {
-    "node": ">=7.6",
-    "npm": ">=4"
+    "node": ">=8",
+    "npm": ">=5"
   }
 }

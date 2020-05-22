@@ -6,7 +6,6 @@
 
 const MemoryDriver = require('../lib/memory_driver.js')
 const {ok, equal, deepEqual, strictEqual} = require('assert')
-const leakage = require('leakage')
 
 describe('memory-driver', function () {
   this.timeout(30000)
@@ -101,15 +100,6 @@ describe('memory-driver', function () {
     await driver.close()
   })
 
-  it('leakage', async () => {
-    const driver = new MemoryDriver()
-    await driver.drop('L')
-    await leakage.iterate.async(async () => {
-      const created = await driver.create('L', {a: 1})
-      await driver.destroy('L', created.id)
-    })
-    await driver.close()
-  })
 })
 
 /* global describe, before, after, it */
